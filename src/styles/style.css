@@ -1,0 +1,146 @@
+.x-gap {
+  @apply px-[1rem] md:px-[2rem] pt-28;
+}
+
+.tab {
+  @apply flex-shrink-0 p-4  rounded-lg md:rounded-r-none mb-1 shadow-md bg-secondary-foreground text-primary-foreground active:border-none focus:border-none  dark:text-secondary;
+}
+.active-tab {
+  @apply text-secondary bg-heightlightColor dark:bg-primary dark:text-heightlightColor;
+}
+
+@media (max-width: 768px) {
+  .design3d div {
+    height: 35vh !important;
+  }
+}
+
+.projects-scrollbar::-webkit-scrollbar {
+  @apply h-[8px] w-[8px];
+}
+
+.projects-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-heightlightColor rounded-md md:rounded-l-none;
+}
+
+.projects-scrollbar::-webkit-scrollbar-thumb:hover {
+  @apply bg-heightlightColor-foreground;
+}
+
+.projects-scrollbar::-webkit-scrollbar-track {
+  @apply bg-secondary-foreground rounded-md md:rounded-l-none;
+}
+.swiper-pagination-bullet {
+  @apply !bg-primary-foreground;
+}
+.swiper-pagination-bullet-active {
+  @apply !bg-heightlightColor;
+}
+/* Skills section  */
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--background);
+}
+
+.skills_section {
+  padding-top: 20vh;
+  padding-bottom: 10vh;
+  position: relative;
+}
+
+.parallax {
+  overflow: hidden;
+  letter-spacing: -2px;
+  line-height: 0.8;
+  margin: 0;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.parallax .scroller {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 64px;
+  display: flex;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.parallax span {
+  display: block;
+  margin-right: 30px;
+}
+/* project slider */
+
+.project-swiper {
+  @apply rounded-lg  bg-secondary;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  @apply md:px-16 md:py-5;
+}
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 130%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  @apply dark:opacity-40 opacity-0;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  @apply !bg-white/50 md:!bg-white !rounded-full py-[0.3rem] px-[0.5rem] md:py-[0.5rem] md:px-[0.8rem];
+  font-size: 1.5rem !important;
+}
+
+/* Card3D */
+
+.card {
+  font-weight: bold;
+  padding: 1em;
+  text-align: right;
+  color: #181a1a;
+  height: 25rem;
+  box-shadow: 0 1px 5px #00000099;
+
+  border-radius: 10px;
+  background-size: cover;
+
+  position: relative;
+
+  transition-duration: 300ms;
+  transition-property: transform, box-shadow;
+  transition-timing-function: ease-out;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  background-position: center;
+}
+
+.card.hovered {
+  transition-duration: 150ms;
+  box-shadow: 0 5px 20px 5px #00000044;
+}
+
+.card .glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+
+  background-image: radial-gradient(circle at 50% -20%, #ffffff22, #0000000f);
+}
