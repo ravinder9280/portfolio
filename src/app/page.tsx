@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from '@/components/nav/nav';
 import { Header } from '@/components/header/header';
-import Testimonails from '@/components/testimonials';
+// import Testimonails from '@/components/testimonials';
 import { Footer } from '@/components/footer';
 import Experiences from '@/components/experiences';
 import Skills from '@/components/skills';
