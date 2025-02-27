@@ -19,7 +19,7 @@ const Links = () => {
         <H1>ravinder</H1>
       </div>
       <div className="mt-8 w-full max-w-md">
-        {links&&links.map((link, index) => (
+        {/* {links&&links.map((link, index) => (
           <Link
             key={index}
             href={link.href}
@@ -28,7 +28,7 @@ const Links = () => {
           >
             <LinkTab image={link.image} title={link.title} icon={link.icon} />
           </Link>
-        ))}
+        ))} */}
       </div>
       <div className="mt-8 w-full max-w-md text-center">
         <H1 className="text-center">Find me</H1>
